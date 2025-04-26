@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Digital Certificate Verification System using Blockchain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **blockchain-powered certificate management system** designed to provide a secure, transparent, and tamper-proof way to issue, verify, and revoke digital certificates. Built using **React**, **Web3.js**, and **Solidity**, this platform leverages smart contracts to store certificate data immutably on the blockchain, eliminating the risk of forgery or data manipulation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Issue Certificate**: Authorized institutions can issue certificates directly on the blockchain.
 
-### `npm start`
+2. **Verify Certificate**: Anyone can verify the authenticity of a certificate instantly and globally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Revoke Certificate**: Certificates can be revoked in case of discrepancies or fraudulent activities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **View Certificates**: Users can view all valid certificates issued on the blockchain.
 
-### `npm test`
+5. **View History**: Links to blockchain explorers (e.g., Etherscan) for transaction history.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- **Frontend**: React, React Router
+- **Blockchain Integration**: Web3.js
+- **Smart Contracts**: Solidity
+- **Styling**: CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Before running the project, ensure you have the following installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
+- **MetaMask** browser extension for blockchain interaction
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to set up and run the project locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/your-username/digital-certificate-frontend.git
+cd digital-certificate-frontend
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Install Dependencies
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Configure Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a `.env.local` file in the root directory and add the following:
 
-### Code Splitting
+```plaintext
+REACT_APP_CONTRACT_ADDRESS=<Your Smart Contract Address>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Replace `<Your Smart Contract Address>` with the deployed address of your smart contract.
 
-### Analyzing the Bundle Size
+### 4. Start the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+Open http://localhost:3000 in your browser to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+```
+digital-certificate-frontend/
+├── public/                 # Static files
+├── src/
+│   ├── components/         # Reusable React components
+│   ├── pages/              # Page components
+│   ├── utils/              # Utility functions (e.g., Web3 integration)
+│   ├── contract/           # Smart contract ABI
+│   ├── App.js              # Main app component
+│   ├── index.js            # Entry point
+│   └── styles/             # CSS files
+├── .env.local              # Environment variables (not included in repo)
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### How to Use
 
-### Deployment
+### A.Issue a Certificate
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1.Navigate to the Issue Certificate page.
+2.Fill in the required details (Certificate ID, Student Name, Course Name, University).
+3.Click Issue to create the certificate on the blockchain.
 
-### `npm run build` fails to minify
+### B.Verify a Certificate
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.Navigate to the Verify Certificate page.
+2.Enter the Certificate ID.
+3.Click Verify to check its authenticity.
+
+### C.Revoke a Certificate
+
+1.Navigate to the Revoke Certificate page.
+2.Enter the Certificate ID.
+3.Click Revoke to invalidate the certificate.
+
+D.View History
+
+1.On the Dashboard, click the View History button to view blockchain transactions on Etherscan.
+
+### License
+This project is licensed under the MIT License. 
