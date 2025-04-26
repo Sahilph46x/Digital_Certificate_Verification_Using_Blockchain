@@ -1,0 +1,65 @@
+/* Container Styling */
+.issue-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(172, 142, 142, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.issue-container h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.issue-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+.issue-container input:focus {
+    border-color: #ff9800;
+}
+
+/* Issue Button */
+.issue-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1ac2ff;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.issue-container button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .issue-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

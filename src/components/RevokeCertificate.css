@@ -1,0 +1,65 @@
+/* Container Styling */
+.revoke-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.revoke-container h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.revoke-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+.revoke-container input:focus {
+    border-color: #ff9800; 
+}
+
+/* Revoke Button */
+.revoke-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1ac2ff;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.revoke-container button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .revoke-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

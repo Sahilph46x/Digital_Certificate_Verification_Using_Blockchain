@@ -1,0 +1,36 @@
+/* Button Styling */
+.view-certificates-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-certificates-btn:hover {
+    background-color: #ff9800;
+    color: black;
+}
+
+.etherscan-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.etherscan-link:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

@@ -1,0 +1,10 @@
+.home-container {
+    display: flex;
+    font-size: 4rem; /* Set the font size to 2rem */
+    font-weight: bold; /* Make the text bold */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 60vh; /* Set the height to fill the entire viewport */
+    text-align: center; /* Center the text inside the container */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
