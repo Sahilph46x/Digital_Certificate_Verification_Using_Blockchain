@@ -102,7 +102,7 @@ digital-certificate-frontend/
 2.Enter the Certificate ID.
 3.Click Revoke to invalidate the certificate.
 
-D.View History
+### D.View History
 
 1.On the Dashboard, click the View History button to view blockchain transactions on Etherscan.
 
